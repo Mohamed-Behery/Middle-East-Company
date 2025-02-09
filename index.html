@@ -8,8 +8,28 @@
     </title>
     <meta
       name="description"
+      content="شركة الشرق الأوسط للصناعات المعدنية ، شركة متخصصة في تنفيذ المشاريع الصناعية والمباني المعدنية مثل الجمالونات، السايلوهات، الأبراج، والمحطات بجودة عالية وخبرة متميزة. Middle East Metal Industries"
+    />
+    <meta
+      name="keywords"
+      content="تصميم المشاريع الصناعية, المباني المعدنية, السايلوهات, الجمالون, المحطات, ME METALS, الشرق الأوسط للصناعات المعدنية, Pre-Engineered Building, Communication Towers, Steel Structures, Middle East Metal Industries"
+    />
+    <meta
+      name="author"
       content="شركة الشرق الأوسط للصناعات المعدنية Middle East Metal Industries"
     />
+    <meta
+      property="og:title"
+      content="شركة الشرق الأوسط للصناعات المعدنية ME METALS"
+    />
+    <meta property="og:description" content="Middle East Metal Industries" />
+    <meta
+      property="og:image"
+      content="https://me-metals.com.eg/images/middle-east-logo.png"
+    />
+    <meta property="og:url" content="https://me-metals.com.eg" />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="index, follow" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -18,237 +38,278 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/images/middle-east-logo.png"
+      href="images/middle-east-logo.png"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="wrapper flex reveal">
-        <a href="#home"
-          ><img src="images/middle-east-logo.png" lazy class="logo" alt="Logo"
-        /></a>
-        <nav class="nav">
-          <ul class="flex">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#about">من نحن</a></li>
-            <li><a href="#services">خدماتنا</a></li>
-            <li><a href="#projects">أعمالنا</a></li>
-            <li><a href="#vision">رؤية الشركة</a></li>
-            <li><a href="#testimonials">آراء العملاء</a></li>
-            <li><a href="#certificates">الشهادات</a></li>
-          </ul>
-        </nav>
-        <div class="actions flex">
-          <a href="#home" class="cta price">طلب عرض سعر</a>
-          <a href="#contact" class="cta contact">تواصل معنا</a>
-        </div>
-        <i class="fas fa-bars toggle-menu"></i>
-      </div>
-    </header>
-
-    <main>
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-        <div class="hero-overlay flex">
-          <div class="hero-content reveal">
-            <h1>
-              شركة الشرق الأوسط للصناعات المعدنية <br />
-              Middle East Metal Industries
-            </h1>
-            <p>
-              محافظة المنوفية ، مدينة السادات ، منطقة المطورين الصناعية ، مجمع
-              السويدى الصناعى ، قطاع E1 ، قطعة 1
-            </p>
-            <i class="fas fa-chevron-down scroll-down"></i>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section class="about" id="about">
-        <div class="container">
-          <h2 class="reveal">من نحن</h2>
-          <div class="wrapper flex reveal">
-            <div class="about-text">
-              <p>
-                What can Eagle Egypt steel provide? * A Pre-Engineered Building
-                (PEB). * Telecommunications tower * Steel structures. * Steel
-                platforms.
-              </p>
-              <div class="flex">
-                <a href="#contact" class="about-cta contact">تواصل معنا</a>
-                <a href="#" class="about-cta price">طلب عرض سعر</a>
-                <a
-                  href="https://www.linkedin.com/company/me-metals/"
-                  target="_blank"
-                  class="linkedin"
+    <div id="loading">
+      <div class="spinner"></div>
+    </div>
+    <div class="page-content">
+      <header>
+        <div class="wrapper flex reveal">
+          <a href="#home"
+            ><img
+              src="images/middle-east-logo.png"
+              lazy
+              class="logo"
+              alt="Logo"
+          /></a>
+          <nav class="nav">
+            <ul class="flex">
+              <li>
+                <a href="../index.html" data-ar="الرئيسية" data-en="Home"
+                  >الرئيسية</a
                 >
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </div>
-            </div>
-            <div class="about-img">
-              <img src="images/factory.jpeg" lazy alt="About US" />
-            </div>
+              </li>
+              <li>
+                <a href="#about" data-ar="من نحن" data-en="About">من نحن</a>
+              </li>
+              <li>
+                <a href="#services" data-ar="خدماتنا" data-en="Services"
+                  >خدماتنا</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects/projects.html"
+                  data-ar="أعمالنا"
+                  data-en="Projects"
+                  >أعمالنا</a
+                >
+              </li>
+              <li>
+                <a href="#vision" data-ar="رؤية الشركة" data-en="Vision"
+                  >رؤية الشركة</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  data-ar="أراء العملاء"
+                  data-en="Testimonials"
+                  >أراء العملاء</a
+                >
+              </li>
+              <li id="lang-toggle">English</li>
+            </ul>
+          </nav>
+          <div class="actions flex">
+            <a
+              href="https://forms.gle/GDbxDZXZnnd34Wt6A"
+              target="_blank"
+              class="cta price"
+              data-ar="طلب عرض سعر"
+              data-en="Request a Quote"
+              >طلب عرض سعر</a
+            >
+            <a
+              href="contact/contact.html"
+              class="cta contact-btn"
+              data-ar="تواصل معنا"
+              data-en="Contact US"
+              >تواصل معنا</a
+            >
           </div>
+          <i class="fas fa-bars toggle-menu"></i>
         </div>
-      </section>
+      </header>
 
-      <!-- Services Section -->
-      <section class="services" id="services">
-        <div class="container">
-          <h2 class="reveal">خدماتنا</h2>
-          <div class="wrapper flex reveal">
-            <div class="service">
-              <img src="images/building.png" alt="Metal Building" />
-              <h3>خدمة 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                quia doloremque fugit?
-              </p>
-            </div>
-            <div class="service">
-              <img src="images/steel.png" alt="Operations on Steel" />
-              <h3>خدمة 2</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                quia doloremque fugit?
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section class="projects">
-        <div class="container">
-          <h2 class="reveal">مشاريعنا</h2>
-          <div class="projects-grid wrapper flex">
-            <div class="project-card reveal">
-              <div class="project-image">
-                <img src="images/factory.jpeg" alt="Project 1" />
-              </div>
-              <div class="project-content">
-                <h4>مشروع 1</h4>
-                <p>وصف المشروع الأول</p>
-                <button class="btn popup-open" data-popup-id="#popup-1">
-                  اعرف أكثر
-                </button>
-              </div>
-            </div>
-            <div class="popup" id="popup-1">
-              <div class="popup-overlay"></div>
-              <span class="popup-close"><i class="fa fa-times"></i></span>
-              <div class="content">
-                <h4>مشروع 1</h4>
-                <p>تفاصيل المشروع الأول</p>
-              </div>
-            </div>
-
-            <div class="project-card reveal">
-              <div class="project-image">
-                <img src="images/hero-bg.jpg" alt="Project 2" />
-              </div>
-              <div class="project-content">
-                <h4>مشروع 2</h4>
-                <p>وصف المشروع الثاني</p>
-                <button class="btn popup-open" data-popup-id="#popup-2">
-                  اعرف أكثر
-                </button>
-              </div>
-            </div>
-            <div class="popup" id="popup-2">
-              <div class="popup-overlay"></div>
-              <span class="popup-close"><i class="fa fa-times"></i></span>
-              <div class="content">
-                <h4>مشروع 2</h4>
-                <p>تفاصيل المشروع الثاني</p>
-              </div>
-            </div>
-
-            <div class="project-card reveal">
-              <div class="project-image">
-                <img src="images/hero-bg.jpg" alt="Project 3" />
-              </div>
-              <div class="project-content">
-                <h4>مشروع 3</h4>
-                <p>وصف المشروع الثالث</p>
-                <button class="btn popup-open" data-popup-id="#popup-3">
-                  اعرف أكثر
-                </button>
-              </div>
-            </div>
-            <div class="popup-overlay"></div>
-            <div class="popup" id="popup-3">
-              <span class="popup-close"><i class="fa fa-times"></i></span>
-              <div class="content">
-                <h4>مشروع 3</h4>
-                <p>تفاصيل المشروع الثالث</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Vision Section -->
-      <section class="vision" id="vision">
-        <div class="vision-overlay"></div>
-        <div class="vision-content">
-          <h3 class="reveal">رؤية الشركة</h3>
-          <p class="reveal">
-            رؤيتنا هي أن نكون روادًا في مجالنا من خلال تقديم أعلى معايير الجودة
-            والابتكار، مع التركيز على رضا العملاء والمجتمع.
-          </p>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact">
-        <div class="container">
-          <h2 class="reveal">تواصل معنا</h2>
-          <div class="wrapper flex reveal">
-            <div class="contact-info">
-              <h3>معلومات التواصل</h3>
-              <p><strong>البريد الإلكتروني:</strong> Redaghoneim27@gmail.com</p>
-              <p><strong>رقم الهاتف:</strong> 01288324798</p>
-              <p>
-                <strong>العنوان:</strong>
+      <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+          <div class="hero-overlay flex">
+            <div class="hero-content reveal">
+              <h1>
+                <span
+                  data-ar="شركة الشرق الأوسط للصناعات المعدنية"
+                  data-en="ME METALS"
+                  >شركة الشرق الأوسط للصناعات المعدنية</span
+                ><br />
+                Middle East Metal Industries
+              </h1>
+              <p
+                data-ar="محافظة المنوفية ، مدينة السادات ، منطقة المطورين الصناعية ، مجمع السويدى الصناعى ، قطاع E1 ، قطعة 1"
+                data-en="Menoufia Governorate, Sadat City, Industrial Developers Zone, El-Sweedy Industrial Complex, Sector E1, Plot 1"
+              >
                 محافظة المنوفية ، مدينة السادات ، منطقة المطورين الصناعية ، مجمع
                 السويدى الصناعى ، قطاع E1 ، قطعة 1
               </p>
-            </div>
-
-            <div class="contact-form">
-              <form>
-                <label for="name">الاسم:</label>
-                <input type="text" id="name" name="name" required />
-
-                <label for="email">البريد الإلكتروني:</label>
-                <input type="email" id="email" name="email" required />
-
-                <label for="message">الرسالة:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  required
-                ></textarea>
-
-                <button type="submit">إرسال</button>
-              </form>
+              <i class="fas fa-chevron-down scroll-down"></i>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
 
-    <footer>
-      <p>
-        جميع الحقوق محفوظة - شركة الشرق الأوسط للصناعات المعدنية ME METALS
-        &copy; 2024 - 2025
-      </p>
-    </footer>
+        <!-- About Section -->
+        <section class="about" id="about">
+          <div class="container">
+            <h2 class="reveal" data-ar="من نحن" data-en="About US">من نحن</h2>
+            <div class="wrapper flex reveal">
+              <div class="about-text">
+                <p
+                  data-ar="
+                شركة الشرق الأوسط للصناعات المعدنية ME METALS هي إحدى الشركات الرائدة في مجال تشكيل وتصنيع المعادن في مصر، حيث نقدم حلولًا متكاملة تخدم مختلف القطاعات الصناعية. نعتمد على أحدث التقنيات والآلات المتطورة لضمان أعلى مستويات الجودة والدقة في منتجاتنا، مع التزامنا بتقديم حلول هندسية مبتكرة تلبي احتياجات عملائنا ، ونسعى إلى بناء علاقات طويلة الأمد مبنية على الثقة والمصداقية، ونعمل باستمرار على تطوير قدراتنا الإنتاجية وتعزيز كفاءة عملياتنا لتحقيق التميز في سوق التصنيع المحلي والإقليمي.
+              "
+                  data-en="Middle East Metal Industries Company (ME METALS) is one of the leading companies in the field of metal forming and manufacturing in Egypt, providing integrated solutions that serve various industrial sectors. We rely on the latest technologies and advanced machines to ensure the highest levels of quality and precision in our products, while being committed to providing innovative engineering solutions that meet the needs of our customers. We seek to build long-term relationships based on trust and credibility, and we are constantly working to develop our production capabilities and enhance the efficiency of our operations to achieve excellence in the local and regional manufacturing market."
+                >
+                  شركة الشرق الأوسط للصناعات المعدنية ME METALS هي إحدى الشركات
+                  الرائدة في مجال تشكيل وتصنيع المعادن في مصر، حيث نقدم حلولًا
+                  متكاملة تخدم مختلف القطاعات الصناعية. نعتمد على أحدث التقنيات
+                  والآلات المتطورة لضمان أعلى مستويات الجودة والدقة في منتجاتنا،
+                  مع التزامنا بتقديم حلول هندسية مبتكرة تلبي احتياجات عملائنا ،
+                  ونسعى إلى بناء علاقات طويلة الأمد مبنية على الثقة والمصداقية،
+                  ونعمل باستمرار على تطوير قدراتنا الإنتاجية وتعزيز كفاءة
+                  عملياتنا لتحقيق التميز في سوق التصنيع المحلي والإقليمي.
+                </p>
+                <div class="flex">
+                  <a
+                    href="#contact"
+                    class="about-cta contact-btn"
+                    data-ar="تواصل معنا"
+                    data-en="Contact US"
+                    >تواصل معنا</a
+                  >
+                  <a
+                    href="https://forms.gle/GDbxDZXZnnd34Wt6A"
+                    target="_blank"
+                    class="about-cta price"
+                    data-ar="طلب عرض سعر"
+                    data-en="Request a Quote"
+                    >طلب عرض سعر</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/company/me-metals/"
+                    target="_blank"
+                    class="linkedin"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="about-img">
+                <img
+                  src="images/projects/مشروع شركة ماوك- العين السخنه/1.jpeg"
+                  lazy
+                  alt="About US"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+          <div class="container">
+            <h2 class="reveal" data-ar="خدماتنا" data-en="Services">خدماتنا</h2>
+            <div class="wrapper flex reveal">
+              <div class="service">
+                <img src="images/building.png" alt="Pre Engineered Building" />
+                <h3>Pre-Engineered Building (PEB)</h3>
+              </div>
+              <div class="service">
+                <img src="images/tower.png" alt="Communication Towers" />
+                <h3>Communication Towers</h3>
+              </div>
+              <div class="service">
+                <img src="images/steel.png" alt="Steel Structures" />
+                <h3>Steel Structures & Platforms</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="vision" id="vision">
+          <div class="vision-overlay"></div>
+          <div class="vision-content">
+            <h2 class="reveal" data-ar="رؤية الشركة" data-en="Our Vision">
+              رؤية الشركة
+            </h2>
+            <p
+              class="reveal"
+              data-ar="
+              نسعى لأن نكون الخيار الأول في صناعة تشكيل المعادن، من خلال الابتكار المستمر، والجودة الفائقة، والالتزام بأعلى المعايير الصناعية ، ونطمح إلى توسيع نطاق أعمالنا محليًا وإقليميًا، وتعزيز مساهمتنا في دعم الاقتصاد الوطني، مع تبني أحدث التقنيات لتعزيز الكفاءة والاستدامة في عملياتنا الإنتاجية.
+              "
+              data-en="
+              We strive to be the first choice in the metal forming industry, through continuous innovation, superior quality, and commitment to the highest industrial standards. We aspire to expand our business locally and regionally, and enhance our contribution to supporting the national economy, while adopting the latest technologies to enhance efficiency and sustainability in our production operations.              "
+            >
+              نسعى لأن نكون الخيار الأول في صناعة تشكيل المعادن، من خلال
+              الابتكار المستمر، والجودة الفائقة، والالتزام بأعلى المعايير
+              الصناعية ، ونطمح إلى توسيع نطاق أعمالنا محليًا وإقليميًا، وتعزيز
+              مساهمتنا في دعم الاقتصاد الوطني، مع تبني أحدث التقنيات لتعزيز
+              الكفاءة والاستدامة في عملياتنا الإنتاجية.
+            </p>
+          </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+          <div class="container">
+            <h2 data-ar="أراء العملاء" data-en="Testimonials">أراء العملاء</h2>
+            <div class="slider">
+              <button class="slider-arrow left-arrow">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="slides">
+                <div class="slide active">
+                  <p
+                    data-ar="دقة وكفاءة عالية وسرعة إنجاز فائقة."
+                    data-en="High quality and high efficiency."
+                  >
+                    دقة وكفاءة عالية وسرعة إنجاز فائقة.
+                  </p>
+                  <h3 data-ar="سعيد الصواف" data-en="Saeed Elsawaf">
+                    سعيد الصواف
+                  </h3>
+                </div>
+                <div class="slide">
+                  <p>Simply the best.</p>
+                  <h3 data-ar="محمد رمضان" data-en="Mohamed Ramadan">
+                    محمد رمضان
+                  </h3>
+                </div>
+                <div class="slide">
+                  <p>Very good and well arranged.</p>
+                  <h3 data-ar="وليد فوزى" data-en="Waleed Fawzy">وليد فوزى</h3>
+                </div>
+                <div class="slide">
+                  <p data-ar="الجودة أولاً." data-en="Quality First.">
+                    الجودة أولاً.
+                  </p>
+                  <h3 data-ar="حازم أبو الحسن" data-en="Hazem Abu Alhasan">
+                    حازم أبو الحسن
+                  </h3>
+                </div>
+              </div>
+              <button class="slider-arrow right-arrow">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="indicators">
+              <span class="indicator active"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>
+          <span
+            data-ar="جميع الحقوق محفوظة - شركة الشرق الأوسط للصناعات المعدنية ME METALS"
+            data-en="All rights reserved - ME METALS"
+          >
+            جميع الحقوق محفوظة - شركة الشرق الأوسط للصناعات المعدنية ME METALS
+          </span>
+          &copy; 2024 - 2025
+        </p>
+      </footer>
+
+      <button id="toTopBtn" class="to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
 
     <script src="main.js"></script>
   </body>
