@@ -107,6 +107,27 @@ ul {
   }
 }
 
+#close-loader {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px 20px;
+  border: none;
+  background: #d9534f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#close-loader:hover {
+  background: #c9302c;
+}
+
 /* Header */
 
 header {
@@ -348,7 +369,7 @@ h2:hover::before {
 .hero {
   position: relative;
   height: calc(100dvh - 64px);
-  background: url("images/projects/مشروع\ المتحدة\ المطورين\ الصناعية/1.jpg");
+  background: url("images/projects/مشروع\ المتحدة\ المطورين\ الصناعية/1.JPG");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -550,7 +571,7 @@ h2:hover::before {
 }
 
 .heading-img.projects-heading {
-  background-image: url("images/flanker-lee-1cdtE_xP2aQ-unsplash\ \(2\).jpg");
+  background-image: url("images/projects-bg.jpg");
 }
 
 .heading-img h2 {
@@ -935,7 +956,7 @@ h2:hover::before {
 }
 
 .contact-heading {
-  background-image: url("images/port-1754667_1920.jpg");
+  background-image: url("images/contact-bg.jpg");
 }
 
 .contact h3 {

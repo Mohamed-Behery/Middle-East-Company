@@ -2,11 +2,32 @@ window.addEventListener("load", () => {
   const loadingElement = document.getElementById("loading");
   const contentElement = document.getElementById("page-content");
 
-  loadingElement.style.display = "none";
-  contentElement.style.display = "block";
+  if (loadingElement && contentElement) {
+    loadingElement.style.display = "none";
+    contentElement.style.display = "block";
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const loadingElement = document.getElementById("loading");
+  const closeLoaderBtn = document.getElementById("close-loader");
+
+  if (loadingElement) {
+    // إخفاء الـ Loader بعد تحميل الصفحة بـ 3 ثواني (لو كان موجودًا)
+    window.setTimeout(() => {
+      loadingElement.style.display = "none";
+    }, 3000);
+  }
+
+  // زر الإغلاق اليدوي
+  if (closeLoaderBtn) {
+    closeLoaderBtn.addEventListener("click", function () {
+      if (loadingElement) {
+        loadingElement.style.display = "none";
+      }
+    });
+  }
+
   // Language toggle
   const langToggleBtn = document.getElementById("lang-toggle");
 
