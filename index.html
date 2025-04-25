@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      شركة الشرق الأوسط للصناعات المعدنية Middle East Metal Industries
-    </title>
+    <title>ME METALS</title>
     <meta
       name="description"
       content="شركة الشرق الأوسط للصناعات المعدنية ، شركة متخصصة في تنفيذ المشاريع الصناعية والمباني المعدنية مثل الجمالونات، السايلوهات، الأبراج، والمحطات بجودة عالية وخبرة متميزة. Middle East Metal Industries"
@@ -45,31 +43,22 @@
   <body>
     <div id="loading">
       <div class="spinner"></div>
-      <button id="close-loader">تخطي التحميل</button>
+      <button id="close-loader" data-ar="تخطي التحميل" data-en="Skip Loading">
+        Skip Loading
+      </button>
     </div>
     <div class="page-content">
       <header>
-        <div class="wrapper flex reveal">
-          <a href="#home"
-            ><img
-              src="images/middle-east-logo.png"
-              lazy
-              class="logo"
-              alt="Logo"
-          /></a>
-          <nav class="nav">
+        <div class="wrapper flex">
+          <a href="#home" class="logo">
+            <h1>ME METALS</h1>
+            <span>Steel Solutions</span>
+          </a>
+          <nav class="nav flex">
             <ul class="flex">
               <li>
-                <a href="../index.html" data-ar="الرئيسية" data-en="Home"
-                  >الرئيسية</a
-                >
-              </li>
-              <li>
-                <a href="#about" data-ar="من نحن" data-en="About">من نحن</a>
-              </li>
-              <li>
                 <a href="#services" data-ar="خدماتنا" data-en="Services"
-                  >خدماتنا</a
+                  >Services</a
                 >
               </li>
               <li>
@@ -77,241 +66,395 @@
                   href="projects/projects.html"
                   data-ar="أعمالنا"
                   data-en="Projects"
-                  >أعمالنا</a
+                  >Projects</a
                 >
               </li>
               <li>
-                <a href="#vision" data-ar="رؤية الشركة" data-en="Vision"
-                  >رؤية الشركة</a
+                <a href="#about" data-ar="من نحن" data-en="About US"
+                  >About US</a
+                >
+              </li>
+              <li>
+                <a href="#statistics" data-ar="إحصائيات" data-en="Statistics"
+                  >Statistics</a
                 >
               </li>
               <li>
                 <a
-                  href="#testimonials"
-                  data-ar="أراء العملاء"
-                  data-en="Testimonials"
-                  >أراء العملاء</a
+                  href="contact/contact.html"
+                  data-ar="تواصل معنا"
+                  data-en="Contact"
+                  >Contact</a
                 >
               </li>
-              <li id="lang-toggle">English</li>
+              <li id="lang-toggle">العربية</li>
             </ul>
+            <div class="quote">
+              <a
+                href="https://forms.gle/GDbxDZXZnnd34Wt6A"
+                target="_blank"
+                data-ar="طلب عرض سعر"
+                data-en="Request a Quote"
+                >Request a Quote</a
+              >
+            </div>
           </nav>
-          <div class="actions flex">
-            <a
-              href="https://forms.gle/GDbxDZXZnnd34Wt6A"
-              target="_blank"
-              class="cta price"
-              data-ar="طلب عرض سعر"
-              data-en="Request a Quote"
-              >طلب عرض سعر</a
-            >
-            <a
-              href="contact/contact.html"
-              class="cta contact-btn"
-              data-ar="تواصل معنا"
-              data-en="Contact US"
-              >تواصل معنا</a
-            >
-          </div>
           <i class="fas fa-bars toggle-menu"></i>
         </div>
       </header>
-
       <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
+          <video class="hero-video" autoplay muted loop playsinline>
+            <source
+              src="images//projects/مشروع رويال للالومنيوم/video.MOV"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
           <div class="hero-overlay flex">
-            <div class="hero-content reveal">
-              <h1>
-                <span
-                  data-ar="شركة الشرق الأوسط للصناعات المعدنية"
-                  data-en="ME METALS"
-                  >شركة الشرق الأوسط للصناعات المعدنية</span
-                ><br />
-                Middle East Metal Industries
-              </h1>
+            <div class="hero-content flex reveal">
+              <h1>ME METALS</h1>
               <p
-                data-ar="محافظة المنوفية ، مدينة السادات ، منطقة المطورين الصناعية ، مجمع السويدى الصناعى ، قطاع E1 ، قطعة 1"
-                data-en="Menoufia Governorate, Sadat City, Industrial Developers Zone, El-Sweedy Industrial Complex, Sector E1, Plot 1"
+                data-ar="شريكك الموثوق في تصنيع المعادن"
+                data-en="Your Trusted Partner in Metal Fabrication"
               >
-                محافظة المنوفية ، مدينة السادات ، منطقة المطورين الصناعية ، مجمع
-                السويدى الصناعى ، قطاع E1 ، قطعة 1
+                Your Trusted Partner in Metal Fabrication
               </p>
-              <i class="fas fa-chevron-down scroll-down"></i>
+              <div class="hero-btns">
+                <a
+                  href="projects/projects.html"
+                  class="btn"
+                  data-ar="تصفح أعمالنا"
+                  data-en="Explore Our Work"
+                  >Explore Our Work</a
+                >
+                <a
+                  href="contact/contact.html"
+                  class="btn btn-transparent"
+                  data-ar="تواصل معنا"
+                  data-en="Get in Touch"
+                  >Get in Touch</a
+                >
+              </div>
             </div>
           </div>
         </section>
 
         <!-- About Section -->
         <section class="about" id="about">
-          <div class="container">
-            <h2 class="reveal" data-ar="من نحن" data-en="About US">من نحن</h2>
-            <div class="wrapper flex reveal">
-              <div class="about-text">
-                <p
-                  data-ar="
-                شركة الشرق الأوسط للصناعات المعدنية ME METALS هي إحدى الشركات الرائدة في مجال تشكيل وتصنيع المعادن في مصر، حيث نقدم حلولًا متكاملة تخدم مختلف القطاعات الصناعية. نعتمد على أحدث التقنيات والآلات المتطورة لضمان أعلى مستويات الجودة والدقة في منتجاتنا، مع التزامنا بتقديم حلول هندسية مبتكرة تلبي احتياجات عملائنا ، ونسعى إلى بناء علاقات طويلة الأمد مبنية على الثقة والمصداقية، ونعمل باستمرار على تطوير قدراتنا الإنتاجية وتعزيز كفاءة عملياتنا لتحقيق التميز في سوق التصنيع المحلي والإقليمي.
-              "
-                  data-en="Middle East Metal Industries Company (ME METALS) is one of the leading companies in the field of metal forming and manufacturing in Egypt, providing integrated solutions that serve various industrial sectors. We rely on the latest technologies and advanced machines to ensure the highest levels of quality and precision in our products, while being committed to providing innovative engineering solutions that meet the needs of our customers. We seek to build long-term relationships based on trust and credibility, and we are constantly working to develop our production capabilities and enhance the efficiency of our operations to achieve excellence in the local and regional manufacturing market."
+          <div class="wrapper">
+            <div class="about-first flex">
+              <div class="about-first-content">
+                <span
+                  data-ar="خبرة في تصنيع المعادن"
+                  data-en="Expertise in Metal Fabrication"
+                  >Expertise in Metal Fabrication</span
                 >
-                  شركة الشرق الأوسط للصناعات المعدنية ME METALS هي إحدى الشركات
-                  الرائدة في مجال تشكيل وتصنيع المعادن في مصر، حيث نقدم حلولًا
-                  متكاملة تخدم مختلف القطاعات الصناعية. نعتمد على أحدث التقنيات
-                  والآلات المتطورة لضمان أعلى مستويات الجودة والدقة في منتجاتنا،
-                  مع التزامنا بتقديم حلول هندسية مبتكرة تلبي احتياجات عملائنا ،
-                  ونسعى إلى بناء علاقات طويلة الأمد مبنية على الثقة والمصداقية،
-                  ونعمل باستمرار على تطوير قدراتنا الإنتاجية وتعزيز كفاءة
-                  عملياتنا لتحقيق التميز في سوق التصنيع المحلي والإقليمي.
+                <h3
+                  data-ar="خيارك الموثوق لمشاريع تصنيع المعادن"
+                  data-en="Your Reliable Choice for Metal Fabrication Projects"
+                >
+                  ME METALS - Your Reliable Choice for Metal Fabrication
+                  Projects
+                </h3>
+              </div>
+              <a href="#about-second" data-ar="اعرف أكثر" data-en="Read More"
+                >Read More</a
+              >
+            </div>
+            <div id="about-second" class="about-second flex">
+              <div class="about-second-content">
+                <hr />
+                <h4>Pre-Engineered Building (PEB)</h4>
+                <p
+                  data-ar="ME METALS هي شركة رائدة في تصنيع المعادن متخصصة في Pre-Engineered Building (PEB)، frames, silos, and telecommunication towers. فريقنا ملتزم بتقديم حلول تصنيع المعادن عالية الجودة والمخصصة لتلبية الاحتياجات الفريدة لعملائنا. مع التركيز على الدقة والابتكار، ونحن ملتزمون بالتميز في كل مشروع."
+                  data-en="ME METALS is a leading steel fabrication company spacializing in pre-engineered Building (PEB), frames, silos, and telecommunication towers. Our team is dedicated to delivering high-quality, customized metal fabrication solutions to meet the unique needs of our clients. With a focus om precision and innovation, we are committed to excellence in every project."
+                >
+                  ME METALS is a leading steel fabrication company spacializing
+                  in pre-engineered Building (PEB), frames, silos, and
+                  telecommunication towers. Our team is dedicated to delivering
+                  high-quality, customized metal fabrication solutions to meet
+                  the unique needs of our clients. With a focus om precision and
+                  innovation, we are committed to excellence in every project.
                 </p>
-                <div class="flex">
-                  <a
-                    href="#contact"
-                    class="about-cta contact-btn"
-                    data-ar="تواصل معنا"
-                    data-en="Contact US"
-                    >تواصل معنا</a
-                  >
-                  <a
-                    href="https://forms.gle/GDbxDZXZnnd34Wt6A"
-                    target="_blank"
-                    class="about-cta price"
-                    data-ar="طلب عرض سعر"
-                    data-en="Request a Quote"
-                    >طلب عرض سعر</a
-                  >
-                  <a
-                    href="https://www.linkedin.com/company/me-metals/"
-                    target="_blank"
-                    class="linkedin"
-                  >
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </div>
               </div>
-              <div class="about-img">
-                <img
-                  src="images/projects/مشروع شركة ماوك- العين السخنه/1.jpeg"
-                  lazy
-                  alt="About US"
-                />
+              <div class="about-img"></div>
+            </div>
+            <div id="about-third" class="about-third flex">
+              <div class="about-img about-img-2"></div>
+              <div class="about-third-content">
+                <hr />
+                <h4>Custom Metal Fabrications</h4>
+                <p
+                  data-ar="في شركة ME METALS، نتميز بتوفير تشكيلات معدنية مخصصة لمختلف الصناعات والتطبيقات التجارية. خبرتنا في تشييد البنية التحتية والهندسة المدنية تضمن أن كل عملية تصنيع مصممة وفقًا لأعلى معايير الجودة والمتانة."
+                  data-en=" At ME METALS, we excel in providing custom metal fabrications for diverse industries and commercial applications. Our expertise in infrastructure construction and civil engineering ensures that every fabrication is tailored to the highest standards of quality and durability."
+                >
+                  At ME METALS, we excel in providing custom metal fabrications
+                  for diverse industries and commercial applications. Our
+                  expertise in infrastructure construction and civil engineering
+                  ensures that every fabrication is tailored to the highest
+                  standards of quality and durability.
+                </p>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- Services Section -->
-        <section class="services" id="services">
-          <div class="container">
-            <h2 class="reveal" data-ar="خدماتنا" data-en="Services">خدماتنا</h2>
-            <div class="wrapper flex reveal">
-              <div class="service">
-                <img src="images/building.png" alt="Pre Engineered Building" />
-                <h3>Pre-Engineered Building (PEB)</h3>
-              </div>
-              <div class="service">
-                <img src="images/tower.png" alt="Communication Towers" />
-                <h3>Communication Towers</h3>
-              </div>
-              <div class="service">
-                <img src="images/steel.png" alt="Steel Structures" />
-                <h3>Steel Structures & Platforms</h3>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Vision Section -->
-        <section class="vision" id="vision">
-          <div class="vision-overlay"></div>
-          <div class="vision-content">
-            <h2 class="reveal" data-ar="رؤية الشركة" data-en="Our Vision">
-              رؤية الشركة
-            </h2>
+        <div id="about-fourth" class="about-fourth flex">
+          <div class="about-img about-img-3"></div>
+          <div class="about-fourth-content">
+            <hr />
+            <h4>Architectural Metalwork</h4>
+            <img
+              src="images/projects/اعمال بمدينة 15 مايو/2 cropped.jpg"
+              alt="about"
+            />
             <p
-              class="reveal"
-              data-ar="
-              نسعى لأن نكون الخيار الأول في صناعة تشكيل المعادن، من خلال الابتكار المستمر، والجودة الفائقة، والالتزام بأعلى المعايير الصناعية ، ونطمح إلى توسيع نطاق أعمالنا محليًا وإقليميًا، وتعزيز مساهمتنا في دعم الاقتصاد الوطني، مع تبني أحدث التقنيات لتعزيز الكفاءة والاستدامة في عملياتنا الإنتاجية.
-              "
-              data-en="
-              We strive to be the first choice in the metal forming industry, through continuous innovation, superior quality, and commitment to the highest industrial standards. We aspire to expand our business locally and regionally, and enhance our contribution to supporting the national economy, while adopting the latest technologies to enhance efficiency and sustainability in our production operations.              "
+              data-ar="خدماتنا في مجال الأعمال المعدنية المعمارية مصممة لتجسيد رؤيتكم الإبداعية. سواءً كانت مشاريع سكنية أو تجارية أو خاصة، تقدم شركة الشرق الأوسط حلولاً شاملة للأعمال المعدنية المعمارية، مما يضمن جمالية مذهلة وسلامة هيكلية."
+              data-en=" Our architectural metalwork services are designed to bring your creative visions to life. Whether it's residential, commercial, or special projects, ME METALS offers comprehensive solutions for architectural metalwork, ensuring stunning aesthetics and structural integrity."
             >
-              نسعى لأن نكون الخيار الأول في صناعة تشكيل المعادن، من خلال
-              الابتكار المستمر، والجودة الفائقة، والالتزام بأعلى المعايير
-              الصناعية ، ونطمح إلى توسيع نطاق أعمالنا محليًا وإقليميًا، وتعزيز
-              مساهمتنا في دعم الاقتصاد الوطني، مع تبني أحدث التقنيات لتعزيز
-              الكفاءة والاستدامة في عملياتنا الإنتاجية.
+              Our architectural metalwork services are designed to bring your
+              creative visions to life. Whether it's residential, commercial, or
+              special projects, ME METALS offers comprehensive solutions for
+              architectural metalwork, ensuring stunning aesthetics and
+              structural integrity.
             </p>
           </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="testimonials" id="testimonials">
+        </div>
+        <section class="stat-section" id="statistics">
+          <div class="stat-bg"></div>
           <div class="container">
-            <h2 data-ar="أراء العملاء" data-en="Testimonials">أراء العملاء</h2>
-            <div class="slider">
-              <button class="slider-arrow left-arrow">
-                <i class="fas fa-chevron-left"></i>
-              </button>
-              <div class="slides">
-                <div class="slide active">
-                  <p
-                    data-ar="دقة وكفاءة عالية وسرعة إنجاز فائقة."
-                    data-en="High quality and high efficiency."
+            <div class="about-content">
+              <div class="about-text">
+                <h2 data-ar="من نحن" data-en="About US">
+                  About US <br /><span
+                    data-ar="اكتشف أكثر عن ME METALS"
+                    data-en="Discover ME METALS"
+                    >Discover ME METALS</span
                   >
-                    دقة وكفاءة عالية وسرعة إنجاز فائقة.
-                  </p>
-                  <h3 data-ar="سعيد الصواف" data-en="Saeed Elsawaf">
-                    سعيد الصواف
-                  </h3>
+                </h2>
+                <p
+                  data-ar="تُعد شركة ME METALS اسمًا مشهورًا في صناعة تصنيع المعادن. وبفضل إرثنا من التميز، أثبتنا أنفسنا كرواد في تقديم حلول معدنية مبتكرة مصممة خصيصًا لمواصفات عملائنا. وقد كان التزامنا بالجودة ورضا العملاء حجر الأساس لنجاحنا."
+                  data-en="ME METALS has been a renowned name in the metal fabrication industry. With a legacy of excellence, we have established ourselves as pioneers in delivering innovative metal solutions tailored to our clients' specifications. Our commitment to quality and customer satisfaction has been the cornerstone of our success."
+                >
+                  ME METALS has been a renowned name in the metal fabrication
+                  industry. With a legacy of excellence, we have established
+                  ourselves as pioneers in delivering innovative metal solutions
+                  tailored to our clients' specifications. Our commitment to
+                  quality and customer satisfaction has been the cornerstone of
+                  our success.
+                </p>
+              </div>
+
+              <div class="stats">
+                <div class="stat-item">
+                  <div class="stat-number">10+</div>
+                  <div
+                    class="stat-label"
+                    data-ar="سنوات خبرة"
+                    data-en="Years of Experience"
+                  >
+                    Year of Experience
+                  </div>
                 </div>
-                <div class="slide">
-                  <p>Simply the best.</p>
-                  <h3 data-ar="محمد رمضان" data-en="Mohamed Ramadan">
-                    محمد رمضان
-                  </h3>
+                <div class="stat-item">
+                  <div class="stat-number">500+</div>
+                  <div
+                    class="stat-label"
+                    data-ar="مشاريع مكتملة"
+                    data-en="Projects Completed"
+                  >
+                    Projects Completed
+                  </div>
                 </div>
-                <div class="slide">
-                  <p>Very good and well arranged.</p>
-                  <h3 data-ar="وليد فوزى" data-en="Waleed Fawzy">وليد فوزى</h3>
+                <div class="stat-item">
+                  <div class="stat-number">250+</div>
+                  <div
+                    class="stat-label"
+                    data-ar="خبراء متخصصون"
+                    data-en="Skilled Professionals"
+                  >
+                    Skilled Professionals
+                  </div>
                 </div>
-                <div class="slide">
-                  <p data-ar="الجودة أولاً." data-en="Quality First.">
-                    الجودة أولاً.
-                  </p>
-                  <h3 data-ar="حازم أبو الحسن" data-en="Hazem Abu Alhasan">
-                    حازم أبو الحسن
-                  </h3>
+                <div class="stat-item">
+                  <div class="stat-number">50+</div>
+                  <div class="stat-label" data-ar="عميل" data-en="Clients">
+                    Clients
+                  </div>
                 </div>
               </div>
-              <button class="slider-arrow right-arrow">
-                <i class="fas fa-chevron-right"></i>
-              </button>
             </div>
-            <div class="indicators">
-              <span class="indicator active"></span>
-              <span class="indicator"></span>
-              <span class="indicator"></span>
+          </div>
+        </section>
+        <section class="services-section" id="services">
+          <div class="container">
+            <div class="services-first flex">
+              <div class="services-first-content">
+                <h2 data-ar="خدماتنا" data-en="Our Expertise">Our Expertise</h2>
+                <p
+                  class="bold-para"
+                  data-ar="تقدم شركة الشرق الأوسط مجموعة شاملة من الخدمات لتلبية الاحتياجات المتنوعة لعملائنا، من التصور إلى التنفيذ، نحن ملتزمون بتقديم خبرة لا مثيل لها في تصنيع المعادن والبناء."
+                  data-en="ME METALS offers a comprehensive range of services to meet the diverse needs of our clients, From conceptualization to excecution, we are dedicated to delivering unparalleled expertise in metal fabrication and construction."
+                >
+                  ME METALS offers a comprehensive range of services to meet the
+                  diverse needs of our clients, From conceptualization to
+                  excecution, we are dedicated to delivering unparalleled
+                  expertise in metal fabrication and construction.
+                </p>
+                <p
+                  data-ar="نحن نفخر بقدرتنا على التعاون مع العملاء والمهندسين المعماريين، وضمان أن كل مشروع يعكس أعلى معايير الحرفية والدقة."
+                  data-en="We take pride in our ability to collaborate with clients andarchitects, ensuring that every project reflects the highest standards of craftsmanship and precision."
+                >
+                  We take pride in our ability to collaborate with clients and
+                  architects, ensuring that every project reflects the highest
+                  standards of craftsmanship and precision.
+                </p>
+              </div>
+              <a
+                href="projects/projects.html"
+                class="btn"
+                data-ar="تصفح مشاريعنا"
+                data-en="Explore Our Projects"
+                >Explore Our Projects</a
+              >
+            </div>
+            <div class="services-grid">
+              <div class="service-card service-card1">
+                <div class="service-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h3>Pre-Engineering Building</h3>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Custom Metal Fabrications</h3>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-archway"></i>
+                </div>
+                <h3>Architectural Metalwork</h3>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-broadcast-tower"></i>
+                </div>
+                <h3>Telecommunication Towers</h3>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-industry"></i>
+                </div>
+                <h3>Industrial Silos</h3>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-road"></i>
+                </div>
+                <h3>Infrastructure Construction</h3>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-hard-hat"></i>
+                </div>
+                <h3>Civil Engineering</h3>
+              </div>
+
+              <div class="service-card service-card8">
+                <div class="service-icon">
+                  <i class="fas fa-tasks"></i>
+                </div>
+                <h3>Project Management</h3>
+              </div>
             </div>
           </div>
         </section>
       </main>
       <footer>
-        <p>
-          <span
-            data-ar="جميع الحقوق محفوظة - شركة الشرق الأوسط للصناعات المعدنية ME METALS"
-            data-en="All rights reserved - ME METALS"
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>ME METALS</h4>
+            <a
+              href="projects/projects.html"
+              data-ar="تصفح المشاريع"
+              data-en="Explore Projects"
+              >Explore Projects</a
+            >
+          </div>
+
+          <div class="footer-section">
+            <h4 data-ar="المقر الرئيسي" data-en="Head Office">Head Office</h4>
+            <p
+              data-ar="مصر، محافظة المنوفية، مدينة السادات، منطقة المطورين الصناعية"
+              data-en="Egypt, Menoufia Governorate, Sadat City, Industrial Developers Zone,"
+            >
+              Egypt, Menoufia Governorate, Sadat City, Industrial Developers
+              Zone,
+            </p>
+            <p
+              data-ar="مجمع السويدى الصناعى ، قطاع E1 ، قطعة 1"
+              data-en="El-Sweedy Industrial Complex, Sector E1, Plot 1"
+            >
+              El-Sweedy Industrial Complex, Sector E1, Plot 1
+            </p>
+            <p>+20 1288324798</p>
+            <p>info@me-metals.com.eg</p>
+          </div>
+
+          <div class="footer-section">
+            <h4 data-ar="منصات التواصل" data-en="Socials">Socials</h4>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/company/me-metals/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4 data-ar="الإستعلامات" data-en="Inquiries">Inquiries</h4>
+            <p
+              data-ar="لأي استفسارات أو أسئلة أو توصيات، يرجى الاتصال على: +201288324798"
+              data-en="For any inquiries, questions or commendations, please call: +20 1288324798"
+            >
+              For any inquiries, questions or commendations, please call: <br />
+              +20 1288324798
+            </p>
+          </div>
+          <div class="footer-section">
+            <a
+              href="contact/contact.html"
+              class="contact-btn"
+              data-ar="تواصل معنا"
+              data-en="Contact Us"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+        <div class="copyrights">
+          <p
+            data-ar="جميع الحقوق محفوظة ME METALS © 2025"
+            data-en="ME METALS - All Rights Reserved © 2025"
           >
-            جميع الحقوق محفوظة - شركة الشرق الأوسط للصناعات المعدنية ME METALS
-          </span>
-          &copy; 2024 - 2025
-        </p>
+            ME METALS - All Rights Reserved © 2025
+          </p>
+        </div>
       </footer>
-
-      <button id="toTopBtn" class="to-top-btn">
-        <i class="fas fa-arrow-up"></i>
-      </button>
     </div>
-
+    <button id="toTopBtn" class="to-top-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
     <script src="main.js"></script>
   </body>
 </html>
