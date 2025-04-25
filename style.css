@@ -159,7 +159,8 @@ header.scrolled nav ul {
 }
 
 header.scrolled ul li a,
-header.scrolled ul li#lang-toggle {
+header.scrolled ul li#lang-toggle,
+header.scrolled .toggle-menu {
   color: #000;
 }
 
@@ -235,7 +236,7 @@ header .logo span {
 .toggle-menu {
   display: none;
   font-size: 20px;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -592,12 +593,7 @@ section .wrapper {
 }
 
 .about-text h2 {
-  font-size: 24px;
   margin-bottom: 20px;
-  color: #fff;
-}
-
-.about-text h2 span {
   color: var(--primary-color);
   font-size: 32px;
 }
