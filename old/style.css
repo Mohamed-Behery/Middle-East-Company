@@ -988,7 +988,7 @@ h2:hover::before {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  background-color: var(--primary-color);
+  background-color: crimson;
   color: var(--neutral-color);
   font-size: 20px;
   font-weight: bold;
@@ -1001,6 +1001,7 @@ h2:hover::before {
 
 .contact-info .contact-card:nth-child(3) {
   font-size: 16px;
+  background-color: var(--primary-color);
 }
 
 .contact-info .contact-card:hover {
@@ -1030,7 +1031,6 @@ h2:hover::before {
 .contact-form label {
   font-size: 20px;
   margin-bottom: 5px;
-  font-weight: bold;
 }
 
 .contact-form label i {
@@ -1060,6 +1060,7 @@ h2:hover::before {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
