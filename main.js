@@ -30,12 +30,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // header
   const header = document.querySelector("header");
+  const logoImg = document.getElementById("logoImg");
+
+  const path = window.location.pathname;
+
+  let logoWhite = "images/logo_white.png";
+  let logoColor = "images/me_metals_logo.png";
+
+  if (path.includes("/contact/") || path.includes("/projects/")) {
+    logoWhite = "../images/logo_white.png";
+    logoColor = "../images/me_metals_logo.png";
+  }
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       header.classList.add("scrolled");
+      logoImg.src = logoColor;
     } else {
       header.classList.remove("scrolled");
+      logoImg.src = logoWhite;
     }
   });
 
